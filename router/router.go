@@ -55,7 +55,7 @@ func ClientRoutes() {
 	r.UrlShortner(v1)
 
 	if err := r.router.Run(":" + os.Getenv("PORT")); err != nil {
-		log.Println("Failed to run server:%v", err)
+		log.Printf("Failed to run server:%v", err)
 	}
 
 }
